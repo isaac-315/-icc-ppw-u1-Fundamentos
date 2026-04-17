@@ -28,13 +28,14 @@ const getSaludo = (nombre, hora) => {
 }
 
 const getSaludo2 = (nombre, hora) => {
-    hora < 12 ?
-        `Buenos días, ${nombre}` :
-        hora < 18 ? `Buenas tardes, ${nombre}` :
-            `Buenas noches, ${nombre}`;
+    return hora < 12
+        ? `Buenos días, ${nombre}`
+        : hora < 18
+            ? `Buenas tardes, ${nombre}`
+            : `Buenas noches, ${nombre}`;
 }
 
 //Mostrar en HTML
-document.getElementById('nombre').textContent = `${nombrePrincipal}`;
+document.getElementById('nombre').textContent = `${nombre}`;
 document.getElementById('apellido').textContent = `${apellido}`;
 document.getElementById('ciclo').textContent = `${ciclo}`;
