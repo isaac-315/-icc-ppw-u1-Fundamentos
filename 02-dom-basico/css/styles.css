@@ -1,0 +1,99 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+   
+}
+
+h2{
+    color: blue;
+}  
+
+.btn-filtro{
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.filtros{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-filtro-activo {
+    background-color: #0b3e5f;
+    color: white;
+}
+
+.btn-eliminar{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid #ccc;  
+    border-radius: 8px;      
+    padding: 10px;    
+    margin-bottom: 12px;  
+
+}
+
+.card-actions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#app{
+    max-width: 800px;
+}
+
+.badge{
+    background-color: rgba(0, 0, 0, 0.05); 
+    padding: 4px 8px;
+    border-radius: 999px;  
+    font-size: 12px;
+    margin-right: 5px;    
+}
+
+.prioridad-alta{
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+.prioridad-media{
+    background-color: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+}
+
+.prioridad-baja{
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+}
+
+.estado-activo{
+    background-color: rgba(39, 174, 96, 0.2);
+    color: #27ae60;
+}
+
+.estado-inactivo{
+    background-color: rgba(192, 57, 43, 0.2);
+    color: #c0392b;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.badge-categoria{
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+}
+
+#app{
+    max-width: 800px;
+    padding-left: 10px;  /* en lugar de margin en contenedor */
+}
