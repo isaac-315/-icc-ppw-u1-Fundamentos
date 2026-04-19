@@ -6,10 +6,20 @@ Esta aplicación web permite gestionar una lista de elementos mediante JavaScrip
 Desde el punto de vista de estilos (CSS), se diseñó una interfaz limpia, organizada y responsive, utilizando clases reutilizables para botones, tarjetas y etiquetas (badges).
 
 Se aplicaron principios de diseño como:
-- Uso de flexbox para alineación
-- Espaciado consistente entre componentes
-- Colores semánticos (rojo = alta prioridad, verde = activo)
-- Uso de transparencias con `rgba` para mejorar la estética
+- Uso de flexbox para alineación.
+- Espaciado consistente entre componentes.
+- Colores semánticos (rojo = alta prioridad, verde = activo).
+- Uso de transparencias con `rgba` para mejorar la estética.
+
+---
+
+## Imágenes de la aplicación
+
+### Vista general
+![Vista general](assets/01-vista-general.png)
+
+### Filtrado aplicado
+![Filtrado](assets/02-filtrado.png)
 
 ---
 
