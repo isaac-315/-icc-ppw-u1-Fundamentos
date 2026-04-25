@@ -51,7 +51,7 @@ const ApiService = {
  */
     async getPosts(limit = 10) {
         // TODO 4.2.1: Retornar el resultado de llamar a this.request() con el endpoint correcto
-           return this.request(`/posts?_limit=${limit}`);
+        return this.request(`/posts?_limit=${limit}`);
     },
 
     /**
@@ -59,7 +59,7 @@ const ApiService = {
      */
     async getPostById(id) {
         // TODO 4.2.2: Retornar el resultado de llamar a this.request() con /posts/{id}
-           return this.request(`/posts/${id}`);
+        return this.request(`/posts/${id}`);
     },
 
     /**
@@ -67,12 +67,12 @@ const ApiService = {
  */
     async createPost(postData) {
         // TODO 4.3.1: Retornar el resultado de llamar a this.request() con:
-         endpoint: '/posts'
+        //   - endpoint: '/posts'
         //   - options: { method: 'POST', body: JSON.stringify(postData) }
-        //   return this.request('/posts', {
-        //     method: 'POST',
-        //     body: JSON.stringify(postData)
-        //   });
+        return this.request('/posts', {
+            method: 'POST',
+            body: JSON.stringify(postData)
+        });
     },
 
     /**
@@ -82,10 +82,10 @@ const ApiService = {
         // TODO 4.4.1: Retornar el resultado de llamar a this.request() con:
         //   - endpoint: `/posts/${id}`
         //   - options: { method: 'PUT', body: JSON.stringify(postData) }
-        //   return this.request(`/posts/${id}`, {
-        //     method: 'PUT',
-        //     body: JSON.stringify(postData)
-        //   });
+        return this.request(`/posts/${id}`, {
+            method: 'PUT',
+            body: JSON.stringify(postData)
+        });
     },
 
     /**
@@ -95,9 +95,9 @@ const ApiService = {
         // TODO 4.4.2: Retornar el resultado de llamar a this.request() con:
         //   - endpoint: `/posts/${id}`
         //   - options: { method: 'DELETE' }
-        //   return this.request(`/posts/${id}`, {
-        //     method: 'DELETE'
-        //   });
+        return this.request(`/posts/${id}`, {
+            method: 'DELETE'
+        });
     },
 
     /**
@@ -106,4 +106,6 @@ const ApiService = {
     async getPostsByUser(userId) {
         return this.request(`/posts?userId=${userId}`);
     }
+
+
 }
